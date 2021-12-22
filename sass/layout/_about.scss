@@ -1,0 +1,38 @@
+.about {
+    padding-bottom: 94px;
+  }
+  
+  .about__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--first-header-text-color);
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .about__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .about__poster {
+    position: relative;
+  }
+  
+  .about__text {
+    position: absolute;
+    top: 224px;
+    width: 100%;
+    height: 70px;
+    padding-top: 27px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-title-color);
+    background: var(--about-background-text);
+  }
