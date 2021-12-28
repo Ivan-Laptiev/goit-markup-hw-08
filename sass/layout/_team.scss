@@ -1,87 +1,115 @@
 .team {
-    background-color: var(--our-team-background);
+  background-color: var(--our-team-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
-  
-  .team__title {
-    font-weight: 700;
+}
+
+.team__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--first-header-text-color);
+  text-align: center;
+  padding-bottom: 30px;
+  @media screen and(min-width:1200px) {
     font-size: 36px;
     line-height: 1.17;
-    letter-spacing: 0.03em;
-    color: var(--first-header-text-color);
-    text-align: center;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
-  
-  .team__list {
+}
+
+.team__list {
+  margin-top: -30px;
+  @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    // flex-basis: calc(100% / 2 - 60px);
+    margin-left: -30px;
   }
-  
-  .unit {
-    padding-top: 30px;
+}
+
+.team__member {
+  margin-top: 30px;
+  max-width: 100%;
+  align-items: center;
+  text-align: center;
+  background-color: var(--main-background-color);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+  }
+}
+
+.unit__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--second-title-color);
+  margin-bottom: 10px;
+}
+
+.unit__position {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  margin-bottom: 16px;
+}
+
+.unit {
+  padding-top: 30px;
+  padding-bottom: 24px;
+  @media screen and (min-width: 1200px) {
     padding-bottom: 30px;
   }
-  
-  .socials__item {
-    width: 44px;
-    height: 44px;
-    & + & {
-     margin-left: 10px;
-     }
-  }
+}
 
-  .socials {
-    display: flex;
-    justify-content: center;
+.socials__item {
+  width: 44px;
+  height: 44px;
+  & + & {
+    margin-left: 10px;
   }
-  
-  .socials__link {
-    width: 100%;
-    height: 100%;
-    background-color: var(--main-background-color);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--base-svg-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-      background-color: var(--accent-color);
-      color: var(--main-background-color);
-    }
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials__link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-background-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--base-svg-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--main-background-color);
   }
-  
-  .socials__icon {
-    fill: currentColor;
-  }
-  
-  .team__member {
-    text-align: center;
-    background-color: var(--main-background-color);
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-  }
-  
-  .unit__name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--second-title-color);
-    margin-bottom: 10px;
-  }
-  
-  .unit__position {
-    font-size: 16px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--main-text-color);
-    margin-bottom: 16px;
-  }
+}
+
+.socials__icon {
+  fill: currentColor;
+}

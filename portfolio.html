@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header__container">
         <nav class="header-navigation">
           <a href="./index.html" class="logo link" lang="en"
@@ -54,7 +54,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <main>
       <section class="portfolio">
         <div class="container">
@@ -80,12 +80,33 @@
             <li class="portfolio-galery__item">
               <a class="portfolio-galery__link link" href="">
                 <div class="portfolio-galery__wrap">
-                  <img
-                    src="./images/laptop-s-licami.jpg"
-                    alt="три персоны"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-1-desktop.jpg    1x,
+                        ./images/portfolio/portfolio-1-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-1-tablet.jpg    1x,
+                        ./images/portfolio/portfolio-1-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-1.jpg    1x,
+                        ./images/portfolio/portfolio-1-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio-1.jpg"
+                      alt="три персоны"
+                    />
+                  </picture>
                   <p class="portfolio-galery__top-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -101,12 +122,33 @@
             <li class="portfolio-galery__item">
               <a class="portfolio-galery__link link" href="">
                 <div class="portfolio-galery__wrap">
-                  <img
-                    src="./images/basketball.jpg"
-                    alt="постер баскетболл"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-2-desktop.jpg    1x,
+                        ./images/portfolio/portfolio-2-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-2-tablet.jpg    1x,
+                        ./images/portfolio/portfolio-2-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-2.jpg    1x,
+                        ./images/portfolio/portfolio-2-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio-2.jpg"
+                      alt="постер баскетболл"
+                    />
+                  </picture>
                   <p class="portfolio-galery__top-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -124,12 +166,33 @@
             <li class="portfolio-galery__item">
               <a class="portfolio-galery__link link" href="">
                 <div class="portfolio-galery__wrap">
-                  <img
-                    src="./images/seafood.jpg"
-                    alt="ресторан"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-3-desktop.jpg    1x,
+                        ./images/portfolio/portfolio-3-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-3-tablet.jpg    1x,
+                        ./images/portfolio/portfolio-3-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-3.jpg    1x,
+                        ./images/portfolio/portfolio-3-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio-3.jpg"
+                      alt="ресторан"
+                    />
+                  </picture>
                   <p class="portfolio-galery__top-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -145,12 +208,33 @@
             <li class="portfolio-galery__item">
               <a class="portfolio-galery__link link" href="">
                 <div class="portfolio-galery__wrap">
-                  <img
-                    src="./images/headphones.jpg"
-                    alt="наушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-4-desktop.jpg    1x,
+                        ./images/portfolio/portfolio-4-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-4-tablet.jpg    1x,
+                        ./images/portfolio/portfolio-4-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-4.jpg    1x,
+                        ./images/portfolio/portfolio-4-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio-4.jpg"
+                      alt="наушники"
+                    />
+                  </picture>
                   <p class="portfolio-galery__top-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -166,12 +250,33 @@
             <li class="portfolio-galery__item">
               <a class="portfolio-galery__link link" href="">
                 <div class="portfolio-galery__wrap">
-                  <img
-                    src="./images/boxes.jpg"
-                    alt="коробочки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-5-desktop.jpg    1x,
+                        ./images/portfolio/portfolio-5-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-5-tablet.jpg    1x,
+                        ./images/portfolio/portfolio-5-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-5.jpg    1x,
+                        ./images/portfolio/portfolio-5-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio-5.jpg"
+                      alt="коробочки"
+                    />
+                  </picture>
                   <p class="portfolio-galery__top-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -187,12 +292,33 @@
             <li class="portfolio-galery__item">
               <a class="portfolio-galery__link link" href="">
                 <div class="portfolio-galery__wrap">
-                  <img
-                    src="./images/monitor.jpg"
-                    alt="монитор"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-6-desktop.jpg    1x,
+                        ./images/portfolio/portfolio-6-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-6-tablet.jpg    1x,
+                        ./images/portfolio/portfolio-6-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-6.jpg    1x,
+                        ./images/portfolio/portfolio-6-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio-6.jpg"
+                      alt="монитор"
+                    />
+                  </picture>
                   <p class="portfolio-galery__top-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -210,12 +336,30 @@
             <li class="portfolio-galery__item">
               <a class="portfolio-galery__link link" href="">
                 <div class="portfolio-galery__wrap">
-                  <img
-                    src="./images/book.jpg"
-                    alt="книга"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-7-desktop.jpg    1x,
+                        ./images/portfolio/portfolio-7-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-7-tablet.jpg    1x,
+                        ./images/portfolio/portfolio-7-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-7.jpg    1x,
+                        ./images/portfolio/portfolio-7-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/portfolio/portfolio-7.jpg" alt="книга" />
+                  </picture>
                   <p class="portfolio-galery__top-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -231,12 +375,30 @@
             <li class="portfolio-galery__item">
               <a class="portfolio-galery__link link" href="">
                 <div class="portfolio-galery__wrap">
-                  <img
-                    src="./images/label.jpg"
-                    alt="ярлык"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-8-desktop.jpg    1x,
+                        ./images/portfolio/portfolio-8-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-8-tablet.jpg    1x,
+                        ./images/portfolio/portfolio-8-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-8.jpg    1x,
+                        ./images/portfolio/portfolio-8-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/portfolio/portfolio-8.jpg" alt="ярлык" />
+                  </picture>
                   <p class="portfolio-galery__top-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -252,12 +414,33 @@
             <li class="portfolio-galery__item">
               <a class="portfolio-galery__link link" href="">
                 <div class="portfolio-galery__wrap">
-                  <img
-                    src="./images/laptop-s-rukami.jpg"
-                    alt="ноутбук с презентацией"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-9-desktop.jpg    1x,
+                        ./images/portfolio/portfolio-9-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-9-tablet.jpg    1x,
+                        ./images/portfolio/portfolio-9-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-9.jpg    1x,
+                        ./images/portfolio/portfolio-9-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio-9.jpg"
+                      alt="ноутбук с презентацией"
+                    />
+                  </picture>
                   <p class="portfolio-galery__top-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -276,7 +459,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <ul class="footer-list list">
           <li class="footer-list__item">
@@ -366,6 +549,6 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>

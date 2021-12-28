@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header__container">
         <nav class="header-navigation">
           <a href="./index.html" class="logo link" lang="en"
@@ -52,7 +52,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <main>
       <section class="hero">
         <div class="container hero__container">
@@ -126,10 +126,12 @@
             <li class="about__item">
               <div class="about__poster">
                 <img
-                  src="./images/box-desktop.jpg"
+                  srcset="
+                    ./images/about/box-algorithm.jpg    1x,
+                    ./images/about/box-algorithm-2x.jpg 2x
+                  "
+                  src="./images/about/box-algorithm.jpg"
                   alt="работа на десктопе"
-                  width="370"
-                  height="294"
                 />
                 <p class="about__text">Десктопные приложения</p>
               </div>
@@ -137,7 +139,11 @@
             <li class="about__item">
               <div class="about__poster">
                 <img
-                  src="./images/box-laptop.jpg"
+                  srcset="
+                    ./images/about/box-laptop.jpg    1x,
+                    ./images/about/box-laptop-2x.jpg 2x
+                  "
+                  src="./images/about/box-laptop.jpg"
                   alt="работа на лептопе"
                   width="370"
                   height="294"
@@ -148,7 +154,11 @@
             <li class="about__item">
               <div class="about__poster">
                 <img
-                  src="./images/box-tablet.jpg"
+                  srcset="
+                    ./images/about/box-pen.jpg    1x,
+                    ./images/about/box-pen-2x.jpg 2x
+                  "
+                  src="./images/about/box-pen.jpg"
                   alt="работа на планшете"
                   width="370"
                   height="294"
@@ -160,16 +170,34 @@
         </div>
       </section>
       <section class="team">
-        <div class="container">
+        <div class="container team_container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__member">
-              <img
-                src="./images/demjanenko.jpg"
-                alt="аватарка"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-demjanenko-desktop.jpg    1x,
+                    ./images/team/team-demjanenko-desktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-demjanenko-tablet.jpg    1x,
+                    ./images/team/team-demjanenko-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-demjanenko.jpg    1x,
+                    ./images/team/team-demjanenko-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/team/team-demjanenko.jpg" alt="аватарка" />
+              </picture>
               <div class="unit">
                 <h3 class="unit__name">Игорь Демьяненко</h3>
                 <p lang="en" class="unit__position">Product Designer</p>
@@ -206,12 +234,30 @@
               </div>
             </li>
             <li class="team__member">
-              <img
-                src="./images/repina.jpg"
-                alt="аватарка"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-repina-desktop.jpg    1x,
+                    ./images/team/team-repina-desktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-repina-tablet.jpg    1x,
+                    ./images/team/team-repina-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-repina.jpg    1x,
+                    ./images/team/team-repina-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/team/team-repina.jpg" alt="аватарка" />
+              </picture>
               <div class="unit">
                 <h3 class="unit__name">Ольга Репина</h3>
                 <p lang="en" class="unit__position">Frontend Developer</p>
@@ -248,12 +294,30 @@
               </div>
             </li>
             <li class="team__member">
-              <img
-                src="./images/tarasov.jpg"
-                alt="аватарка"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-tarasov-desktop.jpg    1x,
+                    ./images/team/team-tarasov-desktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-tarasov-tablet.jpg    1x,
+                    ./images/team/team-tarasov-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-tarasov.jpg    1x,
+                    ./images/team/team-tarasov-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/team/team-tarasov.jpg" alt="аватарка" />
+              </picture>
               <div class="unit">
                 <h3 class="unit__name">Николай Тарасов</h3>
                 <p lang="en" class="unit__position">Marketing</p>
@@ -290,12 +354,30 @@
               </div>
             </li>
             <li class="team__member">
-              <img
-                src="./images/ermakov.jpg"
-                alt="аватарка"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-ermakov-desktop.jpg    1x,
+                    ./images/team/team-ermakov-desktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-ermakov-tablet.jpg    1x,
+                    ./images/team/team-ermakov-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-ermakov.jpg    1x,
+                    ./images/team/team-ermakov-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/team/team-ermakov.jpg" alt="аватарка" />
+              </picture>
               <div class="unit">
                 <h3 class="unit__name">Михаил Ермаков</h3>
                 <p lang="en" class="unit__position">UI Designer</p>
@@ -386,7 +468,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <ul class="footer-list list">
           <li class="footer-list__item">
@@ -476,8 +558,8 @@
           </form>
         </div>
       </div>
-    </footer>
-    <div class="backdrop is-hidden" data-modal>
+    </footer> -->
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__close-btn" data-modal-close>
           <svg class="modal__close-icon" width="18" height="18">
@@ -562,6 +644,6 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script> -->
   </body>
 </html>

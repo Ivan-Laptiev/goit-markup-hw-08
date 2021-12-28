@@ -1,12 +1,25 @@
 body {
-    font-family: var(--main-text-font), sans-serif;
-  }
-  
-  .list {
-    list-style: none;
-  }
-  
-  .link {
-    text-decoration: none;
-  }
-  
+  font-family: var(--main-text-font), sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+//  *,
+//  *::before,
+//  *::after {
+//    box-sizing: inherit;
+//  }
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}

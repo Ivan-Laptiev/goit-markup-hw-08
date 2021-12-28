@@ -1,42 +1,74 @@
 .customers {
+  text-align: center;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
-  
-  .customers__title {
-    font-weight: 700;
+}
+
+.customers__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-title-color);
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
     font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--second-title-color);
+    line-height: 1.17;
     margin-bottom: 50px;
   }
-  
-  .customers__logos {
-    display: flex;
-    justify-content: space-between;
+}
+
+.customers__logos {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.customers__item {
+  align-items: center;
+  flex-basis: calc(100% / 2 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 3 - 30px);
   }
-  
-  .customers__link {
-    display: flex;
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 6 - 30px);
+  }
+}
+
+.customers__link {
+  display: flex;
+  height: 92px;
+  width: 100%;
+  border: 1px solid var(--base-svg-color);
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  color: var(--base-svg-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
     width: 170px;
-    height: 92px;
-    border: 1px solid var(--base-svg-color);
-    border-radius: 4px;
-    align-items: center;
-    justify-content: center;
-    color: var(--base-svg-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      &:hover,
-      &:focus {
-        color: var(--accent-color);
-        border-color: var(--accent-color);
-      }
   }
-  
-  .customer__logo {
-    fill: currentColor;
-  }
-  
+}
+
+.customer__logo {
+  fill: currentColor;
+}
