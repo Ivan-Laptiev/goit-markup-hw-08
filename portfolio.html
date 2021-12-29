@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <nav class="header-navigation">
           <a href="./index.html" class="logo link" lang="en"
@@ -53,8 +53,70 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu_open-btn">
+          <svg class="menu_open-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu_mobile"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu is-hidden">
+          <div class="container menu-container">
+            <button type="button" class="menu_close-btn">
+              <svg class="menu_close-icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-close_mobile"></use>
+              </svg>
+            </button>
+            <div class="menu-top">
+              <ul class="list mobile-menu-list">
+                <li class="mobile-menu-list__item">
+                  <a class="link mobile-menu__link" href="index.html"
+                    >Студия</a
+                  >
+                </li>
+                <li class="mobile-menu-list__item">
+                  <a class="link mobile-menu__link active" href="portfolio.html"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="mobile-menu-list__item">
+                  <a class="link mobile-menu__link" href="">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-buttom">
+              <ul class="contacts-mobile list">
+                <li class="contacts-mobile__item">
+                  <a class="contact-mobile__tel link" href="tel:+380961111111">
+                    +38 096 111 11 11</a
+                  >
+                </li>
+                <li class="contacts-mobile__item">
+                  <a
+                    class="contact-mobile__mail link"
+                    href="mailto:info@devstudio.com"
+                  >
+                    info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="socials-menu list">
+                <li class="socials-menu__item">
+                  <a href="" class="socials-menu__link link"> Instagram </a>
+                </li>
+                <li class="socials-menu__item">
+                  <a href="" class="link socials-menu__link"> Twitter </a>
+                </li>
+                <li class="socials-menu__item">
+                  <a href="" class="socials-menu__link link"> Facebook </a>
+                </li>
+                <li class="socials-menu__item">
+                  <a href="" class="socials-menu__link link"> LinkedIn </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </header> -->
+    </header>
     <main>
       <section class="portfolio">
         <div class="container">
@@ -459,7 +521,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <ul class="footer-list list">
           <li class="footer-list__item">
@@ -532,23 +594,32 @@
           </li>
         </ul>
         <div class="online-form">
-          <p class="footer-title">Подпишитесь на рассылку</p>
+          <br />
           <form action="#" class="online-input">
-            <input
-              type="email"
-              class="online-email"
-              name="online-input"
-              placeholder="E-mail"
-            />
-            <button type="submit" class="online-btn">
-              Подписаться
-              <svg class="online-input__logo" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
+            <label class="online-form__label" for="online-input"
+              >Подпишитесь на рассылку</label
+            >
+            <br />
+            <div class="input-and-btn">
+              <input
+                type="email"
+                class="online-email"
+                name="online-input"
+                id="online-input"
+                placeholder="E-mail"
+              />
+              <br />
+              <button type="submit" class="online-btn">
+                Подписаться
+                <svg class="online-input__logo" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer> 
+    <script src="./js/menu.js"></script>
   </body>
 </html>
