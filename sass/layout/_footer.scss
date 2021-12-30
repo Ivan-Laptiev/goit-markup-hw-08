@@ -4,30 +4,29 @@
   padding-bottom: 60px;
 }
 
-.footer-list {
+.footer-box {
   text-align: center;
-  margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
-    padding-left: 61px;
-    padding-right: 74px;
+    justify-content: space-around;
+    margin-bottom: 60px;
+    align-items: baseline;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
     padding-left: 0;
     padding-right: 0;
-  }
+    margin-bottom: 0;
+      }
 }
 
-.footer-list__item {
-  &:not(:last-child) {
-    margin-bottom: 60px;
-  }
+.footer-adaress {
+  margin-bottom: 60px;
   @media screen and (min-width: 768px) {
-    &:not(:last-child) {
-      margin-bottom: 0;
-    }
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
   }
 }
 
@@ -35,11 +34,8 @@
   text-align: center;
   @media screen and (min-width: 1200px) {
     display: flex;
+    align-items: baseline;
   }
-}
-
-.logo-box {
-  margin-bottom: 20px;
 }
 
 .address-list__item {
@@ -70,8 +66,13 @@
 }
 
 .join-us {
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
   @media screen and (min-width: 1200px) {
-    padding-top: 12px;
+    // padding-top: 12px;
+    text-align: left;
     margin-left: 70px;
   }
 }
@@ -128,9 +129,13 @@
   fill: currentColor;
 }
 
+.logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
 .online-form {
   @media screen and(min-width: 1200px) {
-    padding-top: 12px;
     margin-left: auto;
     text-align: start;
   }

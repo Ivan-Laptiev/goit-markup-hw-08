@@ -15,26 +15,28 @@
   letter-spacing: 0.03em;
   color: var(--first-header-text-color);
   text-align: center;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   @media screen and(min-width:1200px) {
     font-size: 36px;
     line-height: 1.17;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
   }
 }
 
 .team__list {
-  margin-top: -30px;
+  // margin-top: -30px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    // flex-basis: calc(100% / 2 - 60px);
     margin-left: -30px;
+    margin-top: -30px;
   }
 }
 
 .team__member {
-  margin-top: 30px;
+  &:not(:first-child) {
+    margin-top: 30px;
+  }
   max-width: 100%;
   align-items: center;
   text-align: center;
@@ -47,6 +49,7 @@
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
+    margin-top: 30px;
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 4 - 30px);
